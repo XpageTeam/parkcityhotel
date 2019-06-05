@@ -1,0 +1,1834 @@
+$output-bourbon-deprecation-warnings: false;
+@import "bourbon"
+@import "vars"
+
+
+@media screen and (max-width: 1660px)
+
+	.b-slider
+		&.slider-main 
+			.slick-dots
+				bottom: 95px
+
+		&.slider-nav
+			&.nav-main
+				bottom: 95px
+
+
+	.b-slider.slider-main .slick-dots, .b-slider.slider-nav.nav-main
+		bottom: 95px
+
+@media screen and (max-width: 1200px)
+
+	.b-content
+		padding-top: 160px
+		padding-bottom: 50px
+
+		.content-menu
+			margin-top: 0
+
+	.b-page-info
+		padding: 20px 0 20px
+
+	.b-slider.slider-main
+		position: static
+
+	.type-main
+		overflow: hidden
+
+	.vacancy-item
+		.b-container
+			display: flex
+			flex-direction: column
+
+
+		
+
+@media screen and (max-width: 1000px)
+
+	.b-slider.slider-detail
+		max-width: 100% !important
+		margin: 0 !important
+
+	.b-slider.slider-offers 
+		.slick
+			&-prev 
+				left: -25px !important
+				transform: rotate(180deg)
+			&-next
+				right: -25px !important
+
+			&-next, &-prev
+				&:before, &:before
+					content: "→"
+					color: #000
+
+	.b-page .b-content:not(.b-booking-content)
+		padding-top: 94px !important
+
+	.root-item.item-booking
+		display: none !important
+		
+	.b-page-info 
+		.info-item:first-child
+			text-align: left
+
+	.b-vacancy 
+		.vacancy-element 
+			.element-title
+				width: 25%
+
+	body
+		background: none
+
+		&.b-page
+			&.type-main
+				.b-slider 
+					.slick-track, .slick-list
+						height: auto
+
+					.slick-dots
+						left: 0
+						right: 0
+						
+						transform: none
+						display: flex 
+						justify-content: center
+
+
+	.b-page-info
+
+		&.b-detail
+			padding: 20px
+
+	.js__slider-menu
+		position: absolute
+		top: 10rem
+		left: 0
+		right: 0
+		z-index: 15
+		display: flex 
+		justify-content: center
+
+		.menu-item 
+			color: #fff;
+			text-decoration: none;
+			display: inline-block;
+			padding: 13px 30px;
+			margin: 0 10px;
+			background: rgba(237,28,36,.75)
+
+	body 
+		display: flex
+		flex-direction: column
+		background: #fff
+
+
+	.b-slider.slider-detail
+		z-index: 2
+		position: static
+		order: -1
+		margin-top: 40px
+		flex: none
+
+		// display: none
+
+
+
+		.slick
+
+			&-arrow 
+				position: absolute
+
+			&-prev
+				left: 60px
+				top: 55%
+
+			&-next 
+				right: 60px
+				top: 55%
+
+		+ .b-slider.slider-nav
+			display: none
+			
+			// position: static;
+			// left: 0;
+			// transform: none;
+
+			// .slick-list
+			// 	display: none
+			
+		
+
+		~ .b-content
+			background: transparent
+			z-index: 1
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: flex-start
+			// background: url(/upload/images/bg.jpg) center center no-repeat
+			// background-size: cover !important
+			order: -2
+			// display: none
+			flex: none
+			padding-top: 100px
+			
+
+			// .content-menu 
+			// 	margin-bottom: 83px
+
+		~ .b-footer
+			position: static
+			bottom: 0
+			z-index: 10
+			margin: 0
+			margin-top: auto
+			flex: none
+
+
+
+
+
+	.content-menu
+
+		.b-container
+			// flex-direction: row !important
+
+			
+	.b-slider.slider-detail
+		max-width: 400px
+		margin: 20px auto 40px
+
+		height: 260px
+
+	.b-content 
+		.content-menu
+			// margin-bottom: 40px
+
+			.menu-item
+				padding: 9px 20px
+				margin: 0 10px
+
+	.b-slider.slider-detail
+		max-width: 600px
+		margin: 20px auto 40px
+		height: 390px
+		// margin: 0 3rem	
+
+	// 	display: flex 
+	// 	flex-direction: column
+	// 	overflow: visible
+
+	// 	.slider-item
+	// 		position: static
+			
+
+
+	// 	.slider-image
+	// 		display: block
+	// 		position: static
+			
+	img 
+		max-width: 100%
+
+	.burger 
+		display: block
+		
+	.b-header, .b-footer
+		.b-container
+			display: flex 
+			justify-content: space-between
+			align-items: center
+
+	.b-footer
+
+		.b-container
+			flex-wrap: wrap
+
+
+	.header-address, .b-menu.menu-main, .b-footer .footer-tl-mobile, .b-footer .footer-weather, .header-visa
+		display: none
+
+	.burger
+		z-index: 9999
+		display: flex
+		justify-content: center
+		align-items: center
+		box-sizing: content-box
+		width: 30px
+		height: 30px
+		padding: 15px
+		background: 0 0
+		border: 0
+		user-select: none
+		margin: -15px
+		cursor: pointer
+		
+		&:before 
+			display: none
+		span
+			position: relative
+			display: inline-block
+			width: 30px
+			height: 2px
+			border-radius: 5px
+			vertical-align: bottom
+			background: #fff
+			transition: background .2s .4s
+			&:before
+				border-radius: 5px
+				transform: none
+				content: ""
+				position: absolute
+				left: 0
+				top: 10px
+				width: 100%
+				height: 2px
+				background: #fff
+				transform-origin: 50% 50%
+				transition: top .3s .3s,transform .3s
+			&:after
+				border-radius: 5px
+				content: ""
+				position: absolute
+				left: 0
+				top: -10px
+				width: 100%
+				height: 2px
+				background: #fff
+				transform-origin: 50% 50%
+				transition: top .3s .3s,transform .3s
+
+	.main-nav--open
+
+		.b-menu.menu-main
+			overflow-x: hidden
+			opacity: 1 !important
+			z-index: 10
+
+		.submenu
+			display: block
+			height: 100vh !important
+		.burger>span
+			background: 0 0
+		.burger>span::before
+			transform: rotate3d(0,0,1,45deg)
+			top: 0
+			transition: top .3s,transform .3s .5s
+		.burger>span::after 
+			transform: rotate3d(0,0,1,-45deg)
+			top: 0
+			transition: top .3s,transform .3s .5s
+
+		.b-header, .b-slider, .b-slider.slider-main, .b-footer, .b-content, .b-slider.slider-detail, .b-slider.slider-nav, .js__slider-menu
+			transform: translate3d(-250px, 0, 0)
+
+		.b-slider.slider-nav
+			left: initial
+			
+	.b-header, .b-slider, .b-slider.slider-main, .b-footer, .b-content, .b-slider.slider-detail, .b-slider.slider-nav, .js__slider-menu
+		transition: transform .3s ease
+
+	.b-header
+		height: auto
+		padding: 1.4rem 0
+		padding: 1.4rem constant(safe-area-inset-right) 1.4rem constant(safe-area-inset-left)
+		padding: 1.4rem env(safe-area-inset-right) 1.4rem env(safe-area-inset-left)
+
+		.logo, .lang-switcher, .header-phone, .header-visa
+			padding: 0
+			margin: 0
+
+		.b-container
+			padding: 0 1.4rem
+			padding: constant(safe-area-inset-top) 1.4rem 0
+			padding: env(safe-area-inset-top) 1.4rem 0
+
+			&:after
+				display: none
+
+	.b-footer
+		min-height: auto
+		height: auto
+		padding: 1.4rem 0
+		padding: 1.4rem constant(safe-area-inset-right) 1.4rem constant(safe-area-inset-left)
+		padding: 1.4rem env(safe-area-inset-right) 1.4rem env(safe-area-inset-left)
+
+		.footer-copyright, .footer-development, .footer-social
+			padding: 0
+			margin: 0
+			height: auto
+			background: none
+
+			&:before
+				display: none
+				
+			
+
+
+		.b-container
+			padding: 0 1.4rem
+			padding: 0 1.4rem constant(safe-area-inset-bottom)
+			padding: 0 1.4rem env(safe-area-inset-bottom)
+
+			&:after
+				display: none
+
+	.b-slider
+		&.slider-main 
+			.slick-dots
+				bottom: 105px
+
+		&.slider-nav
+			&.nav-main
+				bottom: 105px
+
+	.footer-social
+		display: flex
+
+	.b-menu.menu-main
+		display: block
+		position: fixed
+		top: 0
+		left: initial
+		right: 0
+		background: #fff 
+		width: 250px
+		height: 100%
+		z-index: -1
+		overflow-x: hidden
+		overflow-y: auto
+		opacity: 0
+		transition: opacity .1s ease
+		border-left: 1px solid rgba(#000, .3)
+
+
+		.b-container
+			padding: 0
+
+		.menu
+			&-list
+				display: flex
+				flex-direction: column
+
+		.root
+			&-link
+				padding: 15px
+				height: auto
+				width: 100%
+				text-align: left
+
+			&-item 
+				border-bottom: 1px solid rgba(#000, .4)
+
+		.root-item
+			position: static
+
+			&:hover 
+				.root-link
+					background: #fff
+					color: #000
+
+		.section
+			&-list
+				position: absolute
+				top: 0
+				right: 0
+				padding: 0
+				display: flex 
+				flex-direction: column
+				background: #fff 
+				color: #000
+				width: 250px
+				height: 100%
+				transform: translate3d(100%,0,0)
+				transition: transform .3s ease
+				opacity: 1
+				visibility: initial
+				min-height: 100vh
+				z-index: 999
+
+			&-item 
+				height: auto !important
+				border-bottom: 1px solid rgba(#000, .4)
+				  
+
+
+			&-link
+				color: #000 !important
+				padding: 15px !important
+				line-height: 1 !important
+
+		.b-icon.icon-phone
+			margin-right: 10px
+			
+
+		.header-phone.link-with-icon
+			padding: 15px 
+			line-height: 1
+			text-decoration: none
+			border-bottom: 1px solid rgba(#000, .4)
+			
+	.js__sub-menu--open
+		.section
+			&-list
+				transform: translate3d(0,0,0) !important
+
+
+	.js__has-sub-menu
+		cursor: pointer
+		
+		.root-link
+			position: relative
+			
+			&:after 
+				content: ""
+				position: absolute
+
+				right: 15px
+				top: calc(50% - 3px)
+				+size(6px)
+				display: block
+				border: 
+					top: 1px solid #000
+					right: 1px solid #000
+				transform: rotate(45deg)
+
+	.back
+		position: relative
+		padding: 15px
+		cursor: pointer
+		display: flex 
+		align-items: center
+		border-bottom: 1px solid rgba(#000, .4)
+		line-height: 1
+
+		&:before
+			content: ""
+			display: block
+			margin-right: 15px
+			+size(6px)
+			border: 
+				top: 1px solid #000
+				left: 1px solid #000
+			transform: rotate(-45deg)
+
+
+
+	.b-content
+		background: #fff 
+		z-index: 1
+		position: relative
+		padding: 87px 1.4rem 20px
+		margin: 0 constant(safe-area-inset-right) 0 constant(safe-area-inset-left)
+		margin: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left)
+		margin-bottom: 0
+
+
+		.page-content
+			background: #fff;
+			margin-top: 0;
+			margin-bottom: 0
+			padding-bottom: 0
+			padding-top: 0
+
+			.content-text
+				padding-left: 0
+				float: none
+
+	.b-page-info 
+		.info-item
+			padding: 0
+			display: flex
+			flex-direction: column
+			width: 100%
+
+			h1 
+				text-align: left
+
+	.h1, h1
+		font: 31px/1 Exo2,sans-serif
+		margin-bottom: 15px
+
+	.content-text
+		padding: 0 !important
+
+	.b-booking-form, .b-page-info
+		padding-bottom: 21px
+
+	.b-service.service-list
+		float: none
+		display: flex
+		flex-wrap: wrap
+		margin: 30px 0 -30px -30px
+
+		.service-item
+			width: calc((100% - 30px * 2) / 2)
+			margin: 0 0 30px 30px
+			float: none 
+			padding: 0
+
+	.b-category 
+		.category-item
+			padding: 0
+			max-width: 100%
+
+			.b-container
+				display: flex
+				align-items: flex-start
+
+		.category-price
+			display: flex
+			white-space: nowrap
+
+		.category-image
+			width: auto
+			padding: 0
+			flex: none
+			max-width: 328px
+
+		.category-content
+			width: auto
+			padding-left: 1.4rem
+
+	.image-overlay-holder 
+		background: rgba(0, 0, 0, 0.3)
+		border-radius: 8px
+
+	.b-image 
+		.image-overlay-holder 
+
+
+			.image-overlay 
+				display: flex
+				align-items: center
+				justify-content: center
+
+				.overlay
+					&-title
+						font-size: 19px
+						line-height: 1
+						margin-bottom: 5px
+					&-text 
+						padding: 10px
+						line-height: 1.4
+
+		&.image-proportional 
+			.image-src
+				width: auto
+				height: auto
+				
+
+	.preview-image
+		display: flex
+		justify-content: center
+		margin-bottom: 1.4rem
+
+	.b-image.image-proportional
+		padding-bottom: 30%
+
+	.b-category
+		.category-item 
+			margin: 0 0 20px 0
+
+	.b-content
+
+		.b-page-info
+			margin-top: 0
+
+	.catalog-room
+		
+		.category-image
+			margin-right: 0
+			max-width: 320px
+
+		.overlay-title
+			font-size: 22px
+			line-height: 1
+			margin-bottom: 10px
+
+		.image-overlay-holder
+			line-height: 1.2
+
+		.category-price 
+			margin-bottom: 10px
+
+			.price-value 
+				font-size: 20px
+
+		.category-button
+			margin-bottom: 0
+
+		.category-content
+			padding: 1.4rem
+
+		.category-detail-link 
+			.b-icon
+				top: initial
+				bottom: 1.4rem
+
+
+
+
+
+	.offer-rooms
+		padding: 87px 1.4rem 20px
+
+		> .b-container
+			display: flex 
+			flex-wrap: wrap
+			margin: 0 0 -30px -20px
+
+		.category
+			&-item
+				flex-direction: column
+				width: calc((100% - 20px * 2) / 2)
+				margin: 0 0 30px 20px
+				padding: 0 !important
+
+			&-image
+				margin-bottom: 20px
+
+			&-content
+				padding: 0
+
+	.b-category 
+		.new-offers
+
+			> .b-container 
+				margin-top: 0
+				display: flex 
+				flex-wrap: wrap
+
+			.category-item
+				padding: 0 !important
+				height: auto
+				margin-bottom: 30px
+				float: none 
+
+				.category-content
+					padding: 0
+
+	.b-footer
+		margin-top: 50px
+
+	.category-item
+		padding: 0 !important
+
+	
+
+	.overlay-title
+		font-size: 26px !important
+		line-height: 1
+
+	.b-category .category-detail-link .b-icon:before
+		top: calc(50% - 12px)
+
+	.b-category 
+		.category-image
+			padding: 0
+
+	#sauna-form
+		.sauna-form-wrapper
+			display: flex 
+			flex-wrap: wrap
+		.sauna-wrapper
+			padding: 15px !important
+
+	.b-form.form-sauna 
+		.sauna-form-wrapper
+
+			&:nth-child(2)
+				margin-left: -20px
+
+			.sauna-form-line
+				display: flex
+				flex-wrap: wrap
+				width: 100%
+			.sauna-item
+				width: calc((100% - 20px * 2) / 2 )
+				margin: 0 0 20px 20px !important
+				flex: initial !important
+
+				.s-calendar
+					flex: initial !important
+					margin: 0 !important
+					width: 100%
+			.radio-label
+
+				&:not(:first-child)
+					margin-left: 20px !important
+
+		.sauna-form-wrapper textarea
+			margin: 0 !important
+
+	.b-form.form-sauna input[type=radio]
+		margin: 0 !important
+
+	.b-slider.slider-offers 
+		.slick
+			&-prev
+				left: 30px
+			&-next
+				right: 30px
+
+
+
+	.detail-text
+		img[height]
+			height: auto
+
+	.b-contacts 
+		.contacts-list
+			padding: 15px 0
+			margin-top: 0
+			
+		.staff-list
+			margin-top: 0
+			padding: 15px 0
+
+			.staff-image
+				display: flex;
+				width: 105px;
+				flex: none; 
+
+				img 
+					max-width: 100% 
+
+
+				.image-proportional
+					height: auto
+					padding: 0
+
+			.staff-item 
+				width: calc((100% - 20px * 2) / 2)
+				float: none;
+				padding-left: 0;
+				padding-right: 0;
+				display: flex;
+				margin: 0 0 20px 20px
+
+			.staff-items 
+				max-height: 100%
+				display: flex;
+				flex-wrap: wrap;
+
+	#map, .ymaps-2-1-68-map
+		height: 350px
+
+	.b-contacts .scheme-list
+		margin-top: 0
+		padding: 25px 0
+
+		.b-container
+			display: flex
+
+		.scheme-item
+			display: flex 
+			flex-direction: column
+
+		.b-image
+			margin-top: auto
+
+	.b-page-info.b-detail
+		margin-top: 20px
+
+
+		.info-wrap
+			flex-direction: column
+			align-items: flex-start
+
+		.info-item
+			width: 100%
+
+	.b-detail 
+		.detail-booking
+			display: flex 
+			flex-direction: column
+			align-items: flex-start
+
+		.detail-price
+			display: flex
+			margin-bottom: 10px
+
+		.price-item
+			&:not(:first-child)
+				margin-left: 20px
+
+
+
+
+	.b-form
+		padding: 0
+		margin: 0
+
+		hr
+			margin: 25px 0
+
+		.form-row
+			margin: 0
+
+			&:first-child
+				.form-field
+					width: 100%
+
+			&:nth-child(5), &:nth-child(6), &:nth-child(7)
+				display: flex
+				margin: 0 0 -20px -20px
+
+				.form-field
+					width: calc((100% - 20px * 2) / 2)
+					margin: 0 0 20px 20px
+
+					// + .form-field
+					// 	margin-left: 20px
+
+			.form-field
+				padding: 0
+
+
+			.form-label
+				display: flex 
+				flex-direction: column
+				align-items: flex-start
+				margin-top: 15px
+
+			.form-name
+				width: auto
+				margin-bottom: 5px
+
+
+		.payment
+			width: 100%
+			padding: 1.4rem
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			.payment-title
+				font-size: 24px
+				line-height: 1
+				margin-right: auto
+
+			.payment-item
+				float: none;
+				width: auto;
+				height: auto;
+				margin-left: 0
+				padding: 10px 25px
+				line-height: 1
+				margin-left: 20px
+
+
+
+		.form-label 
+			&.day-label
+				display: flex
+				flex-wrap: wrap
+				flex-direction: row
+
+				b 
+					width: 100%
+					text-align: left
+					margin-bottom: 15px
+
+				label
+					&:not(:last-child)
+						margin-right: 10px
+
+			.label-input
+				width: 100%
+
+		.form-hall
+			display: flex 
+			flex-wrap: wrap
+			margin: 0 0 -20px -20px
+
+			.hall-item
+				width: calc((100% - 20px * 3) / 3)
+				margin: 0 0 20px 20px
+				padding: 0
+
+		.form-button
+			height: auto
+			line-height: 1
+			width: auto
+			padding: 15px 25px
+			margin: 0
+
+	.check-holder
+		display: flex
+		flex-direction: column
+
+		.check-label
+			width: 100% !important
+
+
+	.b-form.form-offer 
+		.form-label 
+			input
+				width: 100%
+
+		.form-label 
+			span
+				text-align: left
+				width: auto
+
+			.b-button
+				font-weight: 700;
+				height: auto;
+				padding: 15px 25px;
+				border-radius: 10px;
+				line-height: 1;
+				border: 0;
+			
+	.b-detail 
+		.detail-image 
+			.image-proportional
+				padding-bottom: 0
+
+	.b-page-info.b-detail 
+		.info-item
+			position: relative
+
+	.b-category, .b-content, body, html
+		min-height: auto
+
+@media screen and (min-width: 661px)
+	.slider-main-mobile
+		display: none			
+
+@media screen and (max-width: 660px)
+
+
+
+	.b-slider.slider-offers 
+		.slick
+			&-prev 
+				transform: rotate(0)
+
+
+
+	.b-container 
+		.b-slider.slider-detail 
+			margin: 0
+			
+			.slick-slide
+				margin: 0
+
+
+
+	.b-category.category-page .category-image
+		width: 100%
+
+	.type-main
+		overflow-x: hidden !important
+
+		.b-header
+			position: static
+
+	slider-item
+
+
+	.page_calendar
+
+		.block-head
+			flex-direction: column-reverse
+
+			.baner
+				margin: 0
+				margin-bottom: 20px
+
+			.calendar
+				width: 100%
+
+	.info-item--hotel + .info-item
+
+		.b-image
+
+			.image-src
+				margin-bottom: 1rem
+
+		.image-overlay
+			margin: 1rem 0 0
+
+	.footer_policy
+		width: auto;
+		padding-bottom: 10px;
+		flex: 1 1 auto;
+
+
+	.slider-main
+		display: none
+
+				
+
+		&-mobile
+			height: 100%
+
+			// .slider-image
+			// 	top: 52px
+			// 	height: auto
+			// 	bottom: 0
+
+			.slick
+				&-prev, &-next 
+					display: none !important
+
+	.b-slider
+		overflow: visible
+
+		.slider-image
+			// height: auto
+			position: static
+			
+
+		// .slider-item
+		// 	height: auto !important
+
+		// .slick-track, .slick-list
+		// 	height: auto
+
+		.slick-dots
+			bottom: 10px
+
+
+		.slick-slide 
+			img
+				// width: 100%
+				// height: 100%
+				// object-fit: cover
+				// object-position: center
+
+	.b-slider.slider-offers 
+		margin: 0
+		padding: 0
+		border-radius: 11px
+		overflow: hidden
+
+		.slider-item
+			margin: 0
+
+		.slider-overlay
+			display: none
+
+		.slick
+
+			&-next, &-prev
+				height: 100%;
+				margin: 0;
+				background: rgba(0,0,0,.3);
+				z-index: 10;
+				top: 0;
+				width: 50px;
+				font-size: 0
+				position: absolute
+				cursor: pointer
+
+				&:before
+					font-family: slick;
+					font-size: 20px;
+					line-height: 1;
+					color: #fff;
+					opacity: .75;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+
+			&-prev
+				left: 0 !important
+
+				&:before
+					content: "←"
+
+			&-next
+				right: 0 !important
+
+				&:before
+					content: "→"
+
+	.b-slider.slider-detail
+		height: 215px
+
+	.b-content 
+		.content-menu
+			margin-bottom: 0
+
+	.b-slider.slider-detail
+		z-index: 10
+		position: relative
+		
+
+		.slick
+
+			&-next, &-prev
+				z-index: 10
+				top: 0
+				width: 50px
+				height: 100%
+				margin: 0
+				background: rgba(#000, .3)
+
+			&-next
+				right: 0
+
+			&-prev
+				left: 0
+
+
+
+	.b-contacts
+		.b-switcher
+			display: none
+
+	.b-footer
+		margin-top: 25px
+
+	.b-menu.menu-main 
+		.root-link
+			position: relative
+			z-index: 100
+	.b-image.image-proportional
+		height: auto
+
+	.b-service
+		flex-direction: column
+		margin: 20px 0
+		float: none
+
+		.service-item
+			display: flex
+			align-items: center
+			flex-direction: row-reverse;
+			letter-spacing: 7px;
+			position: relative;
+			justify-content: flex-end
+
+			.service-title
+				visibility: visible;
+				opacity: 1
+				position: static
+				border: 0
+
+				&:before, &:after 
+					display: none
+
+			.b-icon
+				max-width: 30px
+				width: 100%
+				text-align: center
+				font-size: rem(20)
+	.b-detail
+		h1 
+			margin-bottom: 0
+
+		&.show-detail
+			h1 
+				margin-bottom: 15px
+
+					
+
+	// .information.show-detail
+	// 	padding: 15px 1.4rem	!important
+
+	body, .catalog-room, .restaurant
+		overflow-x: hidden
+
+	.h2, .h3, h2, h3
+		font: 20px/1 Exo2,sans-serif
+
+	.overlay-title
+		font-size: 16px !important
+
+	.conference_element
+
+		.b-page-info.b-detail.show-detail
+			padding: 1.4rem
+
+	.detail-booking
+		margin-bottom: 5px
+
+	.b-page-info.b-detail.show-detail 
+		.info-item, .detail-info
+			padding: 0
+
+	.b-slider.slider-offers 
+		.slick
+			&-prev
+				left: 60px
+			&-next 
+				right: 60px
+
+	.content-menu
+		// display: none
+
+		.b-container
+			display: flex 
+			flex-direction: column
+
+		.menu-item
+			margin-top: 20px !important
+
+	// .b-page-info.b-detail
+	// 	overflow-x: hidden
+
+	.b-search-form.form-shown
+		z-index: 999
+
+	.b-footer
+		min-height: auto
+
+
+	.b-switcher.js-show-gallery
+		display: none
+
+	.b-conference-setup
+		display: flex 
+		flex-direction: column
+
+		.setup-item
+			width: 100%	
+
+	.b-detail 
+		.equipment
+			display: flex 
+			flex-direction: column
+
+			.equipment-item-half
+				width: 100%
+	
+	.b-service
+		display: flex
+		flex-wrap: wrap
+
+	.category-detail-link
+		position: relative !important
+		width: auto !important
+		margin: -5px 0 10px
+		line-height: 1 !important
+		font-size: rem(16) !important
+		
+
+		&:before
+			content: "Подробнее"
+			display: inline-block
+			color: #000
+			border-bottom: 1px solid #000
+
+
+
+
+		.b-icon.icon-arrow_right
+			display: none
+			
+
+	.pozvonim-mobile-stub + div
+		right: initial !important
+		left: 10px !important
+		top: initial !important
+		bottom: 20px !important
+
+	.pozvonim-mobile
+		display: none
+		width: auto !important
+		
+
+
+
+	.popup-block.popup-block__open
+		display: flex !important
+		align-items: center
+
+		img 
+			height: auto
+
+	.b-contacts 
+		.contacts-list 
+			.list-item
+				padding: 0
+
+			.b-icon
+				padding-left: 40px
+
+	.b-contacts 
+		.scheme-list 
+			.scheme-item
+				padding: 0
+
+		p 
+			line-height: 1
+
+	.b-category 
+		.new-offers
+			margin: 0
+
+			.category-item
+				margin: 0 0 25px 0
+
+			.b-button
+				margin-top: 15px
+
+		.category-content
+			br 
+				display: none
+				
+
+	.b-form 
+		.form-label.day-label
+			flex-direction: column
+
+			label
+				&:not(:last-child)
+					margin: 0 0 20px 0
+
+		.form-field
+			width: 100%
+
+		.form-row
+			&:nth-child(5), &:nth-child(6), &:nth-child(7)
+				flex-direction: column
+				margin: 0
+
+				.form-field
+					width: 100%
+					margin: 0
+
+		.form-label.day-label
+			label
+				b
+					display: inline-block
+					width: 27px
+
+		.form-hall
+			flex-direction: column
+			margin: 0
+
+			.hall-item
+				width: 100%
+				margin: 0 0 20px 0
+
+		.check-holder 
+			.check-text
+				padding: 3px 5px 3px 10px
+				float: none
+				height: auto
+				font-size: 12px
+
+			.check-label
+				display: flex
+				justify-content: space-between
+
+		.payment
+			flex-wrap: wrap 
+
+			.payment-title
+				width: 100%
+				font-size: 20px
+				margin-bottom: 20px
+
+			.payment-item
+				padding: 5px 15px
+				margin-left: 5px
+				
+		.form-submit
+			margin-top: 20px
+
+	.catalog-room 
+		.category-image
+			max-width: 100%
+
+	.type-main
+		overflow: visible
+
+		.b-content
+			display: none
+
+		.b-footer
+			position: static !important
+			margin: 0
+
+		.slider-item
+			.image-src
+				border-radius: 0	
+
+	.b-detail 
+		.equipment
+			.equipment-item
+				width: 100%
+
+	.b-vacancy 
+		.vacancy-element
+
+			display: flex
+			flex-direction: column
+
+			.element-title
+				width: 100%
+				padding: 0
+
+		.vacancy-title
+			margin-bottom: 20px
+			padding: 0
+			font-size: 21px;
+			line-height: 1
+
+		.vacancy-element
+			margin-bottom: 5px
+
+		.vacancy-item 
+			.b-switcher
+				padding: 0
+
+	.js__slider-menu
+		display: block !important
+
+		.b-container
+			display: flex 
+			flex-direction: column
+
+		.menu-item
+			text-align: center
+
+			&:not(:first-child)
+				margin-top: 20px
+
+	.b-detail .js-show-gallery, .b-list li
+		margin-bottom: 0px
+
+
+
+	.b-contacts 
+		.contacts-list
+			.b-container
+				display: flex
+				flex-direction: column
+
+			.list-item
+				width: 100%
+
+			
+		.staff-list
+
+
+			.staff-item 
+				width: 100%
+				margin: 0 0 20px 0
+		.scheme-list
+			margin-top: 0
+			padding: 25px 0
+
+			.b-container
+				display: flex
+				flex-direction: column
+
+			.scheme-item
+				width: 100%
+
+				&:not(:first-child)
+					margin-top: 20px
+
+	#sauna-form
+		margin: 0 -1.4rem 20px
+
+		.sauna-wrapper
+			padding: 1.4rem !important
+
+	.b-form.form-sauna 
+		.sauna-form-wrapper
+			&:nth-child(2)
+				margin: 0
+
+			.radio-label:not(:first-child)
+				margin-left: 0 !important
+
+			.sauna-item 
+				width: 100%
+				margin: 0 0 20px 0 !important
+			.sauna-form-line 
+				input
+					margin: 0 0 20px 0 !important
+
+	.sauna-wrapper h3.sauna-form-title
+		font-size: 19px
+
+	
+
+	.b-category 
+		.category-image
+			width: 100% 
+			// margin: 0 0 20px 0
+			margin: 0
+
+		.category-content
+			padding: 1.4rem 1.4rem 1.4rem 0
+
+	.b-page-info 
+		.info-item.info-item-full
+			padding: 0
+
+
+
+	.b-header
+		.header-phone
+			display: none
+
+		.logo
+
+			.logo
+				&-mobile
+					display: block
+
+				&-image
+					display: none
+
+	.b-footer
+		
+		.b-container
+			// flex-wrap: wrap
+
+		.footer-copyright
+			width: 100%
+			text-align: center
+			order: 1
+			margin-top: 10px
+
+		.footer-development
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+		.footer-social
+			display: none
+
+	div[class*="x-tl-booking"]
+		display: none !important
+
+	.footer_policy
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		text-align: center
+
+	.b-slider.slider-main .slick-dots, .b-slider.slider-nav.nav-main
+		display: none !important
+
+	.b-page-info 
+		.info-wrap
+			display: flex 
+			flex-direction: column
+
+		.info-item
+			width: 100%
+
+			&--hotel
+				display: flex 
+				flex-direction: column
+				align-items: center
+
+	.h1, h1
+		font: 23px/1 Exo2,sans-serif
+		margin-bottom: 15px
+
+	.h2, .h3, h2, h3, p
+		margin-bottom: 10px
+
+	.b-category.category-page 
+		.category-item
+			display: flex 
+			flex-direction: column
+			margin-top: 20px
+
+	.b-category 
+		.category-image
+			width: 100%
+			padding: 0
+
+			&:not(:first-child)
+				margin-top: 20px
+
+
+	.b-service.service-list
+		float: none
+		display: flex
+		flex-wrap: wrap
+		margin: 30px 0 -30px 0
+
+		.service-item
+			width: 100%
+			margin: 0 0 30px 0
+			float: none 
+			padding: 0
+
+			.b-icon
+				text-align: left
+	.about
+		.category-item
+			margin: 0 0 -20px 0
+		 
+			.image-link
+				width: 100% 
+				margin: 0 0 20px 0
+
+	.b-category 
+		.category-item 
+			.b-container
+				flex-direction: column
+
+		.category-content
+			width: 100%
+
+	.category
+		&-item
+
+			&:last-child
+				margin-bottom: 0
+
+	#sauna-form .sauna-form-wrapper
+		justify-content: center
+
+
+	.b-category, .b-content, body, html
+		min-height: auto
+
+	.price-value
+		padding: 0 5px
+
+	h2
+		a 
+			display: inline-block
+			margin-top: 5px
+
+	.offer-rooms
+		padding: 87px 1.4rem 20px
+
+		> .b-container
+			margin: 0
+
+		.category
+			&-item
+				width: 100%
+				margin: 0 0 30px 0
+
+				&:last-child
+					margin-bottom: 0
+
+		
+	.overlay-title
+			font-size: 25px
+			line-height: 1
+
+	.b-category 
+		.new-offers
+
+			.category-item
+				width: 100%
+
+				.category-content
+					padding: 0
+
+	.catalog-room 
+		.category-content
+			padding: 1.4rem 0
+
+	.b-page-info
+		padding: 1.4rem 0
+		&.b-detail
+			padding: 0
+
+	.b-page-info.b-detail 
+		.info-item
+			// padding: 15px 1.4rem
+
+	.b-detail 
+		.detail-price 
+			.price-item
+
+				display: flex
+
+			.price-value
+				font-size: 20px
+
+	.catalog-room 
+		.category-button
+			margin-bottom: 10px
+
+	.b-content, .content-menu
+		background: #fff !important
+		z-index: 2
+
+	.block-head
+		margin-bottom: 20px !important
+
+
+
+@media screen and (max-width: 380px)
+	.b-slider.slider-detail
+		max-width: 100%
+
+
+@media screen and (max-width: 373px)
+
+	.b-header 
+		.lang-switcher 
+			.current-lang
+				width: 55px
+				padding: 0 0 0 5px
+					
+				&:before
+					display: none
+
+	.pozvonim-mobile
+		height: auto !important
+
+	.b-form 
+		.payment
+			padding: 10px
+
+			.payment-title
+				margin-bottom: 15px
+
+			.payment-item
+				padding: 5px 12px
+
+	.b-form.form-sauna input[type=radio]
+		width: 249px
+
+	.b-header 
+		.lang-switcher 
+			.list 
+				width: 55px
+				.link
+					padding: 0 0 0 5px 
+					
+					&:before
+						display: none
+
+		
+		
+
+
+
+
+
+
+
+		
+			
+			
+				
+		
+
+
+
+				
+		
+
+		
+
+				
+
+
+
+		
+
