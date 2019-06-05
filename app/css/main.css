@@ -1,4 +1,96 @@
 @charset "UTF-8";
+.catalog-room .category-item {
+  margin-top: 0;
+}
+
+.catalog-room .b-service {
+  float: none;
+  margin-top: 20px;
+}
+
+.catalog-room .category-price {
+  color: #000;
+}
+
+.catalog-room .category-price .price-value {
+  font-size: 1.25rem !important;
+}
+
+.catalog-room .category-price .b-icon {
+  color: #ED1B23;
+}
+
+.catalog-room .service-item {
+  margin-right: 20px;
+}
+
+.category__title {
+  position: relative;
+  color: #ED1B23;
+  font-size: 1.5625rem;
+  margin-bottom: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.category__title:after {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  transform: rotate(45deg);
+  border-top: 2px solid #ED1B23;
+  border-right: 2px solid #ED1B23;
+  margin: 0 0 2px 5px;
+}
+
+.category__btn {
+  margin-top: 28px;
+}
+
+.category__area span, .category__bed span {
+  color: #B5B5B5;
+  font-size: 1rem;
+}
+
+.b-service .b-icon {
+  display: block;
+  height: 19px;
+  width: 19px;
+}
+
+.b-service .b-icon:before {
+  display: none;
+}
+
+.icon-wi-fi {
+  background: url("../new-img/ico-wifi.svg") no-repeat center;
+}
+
+.icon-restaurant {
+  background: url("../new-img/ico-coffee.svg") no-repeat center;
+}
+
+.icon-parking {
+  background: url("../new-img/ico-parking.svg") no-repeat center;
+}
+
+.icon-alarm {
+  background: url("../new-img/ico-clock.svg") no-repeat center;
+}
+
+.icon-no_smoking {
+  background: url("../new-img/ico-smoking.svg") no-repeat center;
+}
+
+.icon-computer {
+  background: url("../new-img/ico-monitor.svg") no-repeat center;
+}
+
+.icon-clock {
+  background: url("../new-img/ico-clock-1.svg") no-repeat center;
+}
+
 .b-content {
   padding-top: 130px;
 }
