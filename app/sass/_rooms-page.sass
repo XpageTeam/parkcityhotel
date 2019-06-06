@@ -19,6 +19,54 @@
 		margin-right: 20px
 
 
+.category-image
+	&__list
+
+		.slick
+			&-list
+				margin: 0 -15px
+				
+			&-slide
+				margin: 0 15px
+
+
+		&.slick-initialized
+			.category-image__item
+				display: block
+
+		.slick-next
+			right: 0
+			top: 0
+			margin: 0
+			z-index: 10
+
+		button
+			top: 0
+			margin: 0
+			height: 100%
+			width: 54px
+			background: rgba(0, 0, 0, 0.4) !important
+
+		.slick
+			&-next
+				border-radius: 0 8px 8px 0
+
+				&:before
+					content: "→"
+
+			&-prev
+				left: 0
+				border-radius: 8px 0 0 8px
+
+				&:before
+					content: "←"
+	&__item
+		&:not(:first-child)
+			display: none
+
+
+
+
 
 
 .category
@@ -47,3 +95,12 @@
 			color: #B5B5B5
 			font-size: rem(16)
 
+
+
+@media screen and (max-width: 667px)
+	
+	.more-info
+		display: block !important
+		margin-top: 10px
+		color: #000
+		text-decoration: none

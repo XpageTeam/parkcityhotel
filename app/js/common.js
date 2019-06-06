@@ -46,6 +46,14 @@ $(document).ready(function () {
 
     });
 
+    if ($('.category-image__list').length) {
+        $('.category-image__list').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            slide: '.category-image__item'
+        });
+    }
+
     // if($(window).width() < 1000){
     //     var menuSlider = $('.b-slider.slider-detail ~ .b-content .content-menu').clone().addClass('js__slider-menu');
     //     $('.b-slider.slider-detail ~ .b-content .content-menu').closest('body').append(menuSlider);
