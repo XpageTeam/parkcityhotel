@@ -24,6 +24,44 @@
   margin-right: 20px;
 }
 
+.catalog-room .b-service .b-icon {
+  display: block;
+  height: 19px;
+  width: 19px;
+}
+
+.catalog-room .b-service .b-icon:before {
+  display: none;
+}
+
+.catalog-room .icon-wi-fi {
+  background: url("../new-img/ico-wifi.svg") no-repeat center;
+}
+
+.catalog-room .icon-restaurant {
+  background: url("../new-img/ico-coffee.svg") no-repeat center;
+}
+
+.catalog-room .icon-parking {
+  background: url("../new-img/ico-parking.svg") no-repeat center;
+}
+
+.catalog-room .icon-alarm {
+  background: url("../new-img/ico-clock.svg") no-repeat center;
+}
+
+.catalog-room .icon-no_smoking {
+  background: url("../new-img/ico-smoking.svg") no-repeat center;
+}
+
+.catalog-room .icon-computer {
+  background: url("../new-img/ico-monitor.svg") no-repeat center;
+}
+
+.catalog-room .icon-clock {
+  background: url("../new-img/ico-clock-1.svg") no-repeat center;
+}
+
 .category-image__list .slick-list {
   margin: 0 -15px;
 }
@@ -108,44 +146,6 @@
     color: #000;
     text-decoration: none;
   }
-}
-
-.b-service .b-icon {
-  display: block;
-  height: 19px;
-  width: 19px;
-}
-
-.b-service .b-icon:before {
-  display: none;
-}
-
-.icon-wi-fi {
-  background: url("../new-img/ico-wifi.svg") no-repeat center;
-}
-
-.icon-restaurant {
-  background: url("../new-img/ico-coffee.svg") no-repeat center;
-}
-
-.icon-parking {
-  background: url("../new-img/ico-parking.svg") no-repeat center;
-}
-
-.icon-alarm {
-  background: url("../new-img/ico-clock.svg") no-repeat center;
-}
-
-.icon-no_smoking {
-  background: url("../new-img/ico-smoking.svg") no-repeat center;
-}
-
-.icon-computer {
-  background: url("../new-img/ico-monitor.svg") no-repeat center;
-}
-
-.icon-clock {
-  background: url("../new-img/ico-clock-1.svg") no-repeat center;
 }
 
 .b-content {
