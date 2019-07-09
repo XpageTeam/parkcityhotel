@@ -20,44 +20,6 @@
   margin-right: 20px;
 }
 
-.catalog-room .b-service .b-icon {
-  display: block;
-  height: 19px;
-  width: 19px;
-}
-
-.catalog-room .b-service .b-icon:before {
-  display: none;
-}
-
-.catalog-room .icon-wi-fi {
-  background: url("../new-img/ico-wifi.svg") no-repeat center;
-}
-
-.catalog-room .icon-restaurant {
-  background: url("../new-img/ico-coffee.svg") no-repeat center;
-}
-
-.catalog-room .icon-parking {
-  background: url("../new-img/ico-parking.svg") no-repeat center;
-}
-
-.catalog-room .icon-alarm {
-  background: url("../new-img/ico-clock.svg") no-repeat center;
-}
-
-.catalog-room .icon-no_smoking {
-  background: url("../new-img/ico-smoking.svg") no-repeat center;
-}
-
-.catalog-room .icon-computer {
-  background: url("../new-img/ico-monitor.svg") no-repeat center;
-}
-
-.catalog-room .icon-clock {
-  background: url("../new-img/ico-clock-1.svg") no-repeat center;
-}
-
 .category-image__list .slick-list {
   margin: 0 -15px;
 }
@@ -142,6 +104,152 @@
     color: #000;
     text-decoration: none;
   }
+}
+
+.restaurant .b-service {
+  float: none;
+  margin-top: 20px;
+}
+
+.restaurant .category-price {
+  color: #000;
+}
+
+.restaurant .category-price .price-value {
+  font-size: 1.25rem !important;
+}
+
+.restaurant .category-price .b-icon {
+  color: #ED1B23;
+}
+
+.restaurant .service-item {
+  margin-right: 20px;
+}
+
+.b-service .b-icon {
+  display: block;
+  height: 19px;
+  width: 19px;
+}
+
+.b-service .b-icon:before {
+  display: none;
+}
+
+.icon-wi-fi {
+  background: url("../new-img/ico-wifi.svg") no-repeat center;
+}
+
+.icon-restaurant {
+  background: url("../new-img/ico-coffee.svg") no-repeat center;
+}
+
+.icon-parking {
+  background: url("../new-img/ico-parking.svg") no-repeat center;
+}
+
+.icon-alarm {
+  background: url("../new-img/ico-clock.svg") no-repeat center;
+}
+
+.icon-no_smoking {
+  background: url("../new-img/ico-smoking.svg") no-repeat center;
+}
+
+.icon-computer {
+  background: url("../new-img/ico-monitor.svg") no-repeat center;
+}
+
+.icon-clock {
+  background: url("../new-img/ico-clock-1.svg") no-repeat center;
+}
+
+.icon-morkovka {
+  background: url("../new-img/carrot.svg") no-repeat center;
+}
+
+.icon-ball {
+  background: url("../new-img/ball1.svg") no-repeat center;
+}
+
+.icon-soska {
+  background: url("../new-img/baby.svg") no-repeat center;
+}
+
+.icon-cocktail {
+  background: url("../new-img/cocktail.svg") no-repeat center;
+}
+
+.icon-beer {
+  background: url("../new-img/beer.svg") no-repeat center;
+}
+
+.icon-kaljan {
+  background: url("../new-img/hookah.svg") no-repeat center;
+}
+
+.icon-microphone {
+  background: url("../new-img/microphone.svg") no-repeat center;
+}
+
+.icon-sound {
+  background: url("../new-img/audio.svg") no-repeat center;
+}
+
+.icon-drink, .icon-water {
+  background: url("../new-img/water.svg") no-repeat center;
+}
+
+.icon-planshet {
+  background: url("../new-img/screen.svg") no-repeat center;
+}
+
+.icon-projector_ekran {
+  background: url("../new-img/projector-screen.svg") no-repeat center;
+}
+
+.icon-projector {
+  background: url("../new-img/projector.svg") no-repeat center;
+}
+
+.icon-call {
+  background: url("../new-img/phone.svg") no-repeat center;
+}
+
+.conference .category-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.conference .category-button {
+  margin-top: 20px;
+}
+
+.conference .b-service {
+  float: none;
+  margin-top: 20px;
+}
+
+.conference .category-price {
+  color: #000;
+}
+
+.conference .category-price .price-value {
+  font-size: 1.25rem !important;
+}
+
+.conference .category-price .b-icon {
+  color: #ED1B23;
+}
+
+.conference .service-item {
+  margin-right: 20px;
+}
+
+.category-image__list.slick-slider {
+  margin: 0;
 }
 
 .b-content {
@@ -1586,7 +1694,6 @@ img {
   }
   .b-service .service-item .b-icon {
     max-width: 30px;
-    width: 100%;
     text-align: center;
     font-size: 1.25rem;
   }
