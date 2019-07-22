@@ -376,6 +376,18 @@
   background: url("../new-img/phone.svg") no-repeat center;
 }
 
+.mobile-link {
+  display: none;
+}
+
+.footer-copyright {
+  margin-bottom: 20px;
+}
+
+.footer-copyright a {
+  color: #fff;
+}
+
 .category-image__list.slick-slider {
   margin: 0;
 }
@@ -1660,6 +1672,12 @@ img {
 }
 
 @media screen and (max-width: 660px) {
+  .mobile-link {
+    display: block;
+  }
+  .footer-copyright a {
+    display: none;
+  }
   .b-slider.slider-offers .slick-prev {
     transform: rotate(0);
   }
