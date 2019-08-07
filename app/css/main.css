@@ -830,6 +830,9 @@ img {
   .b-slider.slider-main .slick-dots, .b-slider.slider-nav.nav-main {
     bottom: 95px;
   }
+  .type-main .b-slider.slider-main .slick-dots {
+    bottom: 155px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -885,9 +888,6 @@ img {
   }
   body {
     background: none;
-  }
-  body.b-page.type-main .b-slider .slick-track, body.b-page.type-main .b-slider .slick-list {
-    height: auto;
   }
   body.b-page.type-main .b-slider .slick-dots {
     left: 0;

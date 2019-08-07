@@ -18,6 +18,10 @@ $output-bourbon-deprecation-warnings: false
 	.b-slider.slider-main .slick-dots, .b-slider.slider-nav.nav-main
 		bottom: 95px
 
+	.type-main
+		.b-slider.slider-main .slick-dots
+			bottom: 155px
+
 @media screen and (max-width: 1200px)
 
 	.b-content
@@ -45,6 +49,8 @@ $output-bourbon-deprecation-warnings: false
 		
 
 @media screen and (max-width: 1000px)
+
+
 
 	.b-slider.slider-detail
 		max-width: 100% !important
@@ -85,7 +91,7 @@ $output-bourbon-deprecation-warnings: false
 			&.type-main
 				.b-slider 
 					.slick-track, .slick-list
-						height: auto
+						// height: auto
 
 					.slick-dots
 						left: 0
@@ -117,7 +123,7 @@ $output-bourbon-deprecation-warnings: false
 			padding: 13px 30px
 			margin: 0 10px
 			background: rgba(237,28,36,.75)
-
+			
 	body 
 		display: flex
 		flex-direction: column
