@@ -30,34 +30,6 @@
   display: none;
 }
 
-.catalog-room .icon-wi-fi {
-  background: url("../new-img/ico-wifi.svg") no-repeat center;
-}
-
-.catalog-room .icon-restaurant {
-  background: url("../new-img/ico-coffee.svg") no-repeat center;
-}
-
-.catalog-room .icon-parking {
-  background: url("../new-img/ico-parking.svg") no-repeat center;
-}
-
-.catalog-room .icon-alarm {
-  background: url("../new-img/ico-clock.svg") no-repeat center;
-}
-
-.catalog-room .icon-no_smoking {
-  background: url("../new-img/ico-smoking.svg") no-repeat center;
-}
-
-.catalog-room .icon-computer {
-  background: url("../new-img/ico-monitor.svg") no-repeat center;
-}
-
-.catalog-room .icon-clock {
-  background: url("../new-img/ico-clock-1.svg") no-repeat center;
-}
-
 .category-image__list .slick-list {
   margin: 0 -15px;
 }
@@ -175,86 +147,6 @@
   display: none;
 }
 
-.restaurant .icon-wi-fi {
-  background: url("../new-img/ico-wifi.svg") no-repeat center;
-}
-
-.restaurant .icon-restaurant {
-  background: url("../new-img/ico-coffee.svg") no-repeat center;
-}
-
-.restaurant .icon-parking {
-  background: url("../new-img/ico-parking.svg") no-repeat center;
-}
-
-.restaurant .icon-alarm {
-  background: url("../new-img/ico-clock.svg") no-repeat center;
-}
-
-.restaurant .icon-no_smoking {
-  background: url("../new-img/ico-smoking.svg") no-repeat center;
-}
-
-.restaurant .icon-computer {
-  background: url("../new-img/ico-monitor.svg") no-repeat center;
-}
-
-.restaurant .icon-clock {
-  background: url("../new-img/ico-clock-1.svg") no-repeat center;
-}
-
-.restaurant .icon-morkovka {
-  background: url("../new-img/carrot.svg") no-repeat center;
-}
-
-.restaurant .icon-ball {
-  background: url("../new-img/ball1.svg") no-repeat center;
-}
-
-.restaurant .icon-soska {
-  background: url("../new-img/baby.svg") no-repeat center;
-}
-
-.restaurant .icon-cocktail {
-  background: url("../new-img/cocktail.svg") no-repeat center;
-}
-
-.restaurant .icon-beer {
-  background: url("../new-img/beer.svg") no-repeat center;
-}
-
-.restaurant .icon-kaljan {
-  background: url("../new-img/hookah.svg") no-repeat center;
-}
-
-.restaurant .icon-microphone {
-  background: url("../new-img/microphone.svg") no-repeat center;
-}
-
-.restaurant .icon-sound {
-  background: url("../new-img/audio.svg") no-repeat center;
-}
-
-.restaurant .icon-drink, .restaurant .icon-water {
-  background: url("../new-img/water.svg") no-repeat center;
-}
-
-.restaurant .icon-planshet {
-  background: url("../new-img/screen.svg") no-repeat center;
-}
-
-.restaurant .icon-projector_ekran {
-  background: url("../new-img/projector-screen.svg") no-repeat center;
-}
-
-.restaurant .icon-projector {
-  background: url("../new-img/projector.svg") no-repeat center;
-}
-
-.restaurant .icon-call {
-  background: url("../new-img/phone.svg") no-repeat center;
-}
-
 .conference .category-content {
   display: flex;
   flex-direction: column;
@@ -296,84 +188,253 @@
   display: none;
 }
 
-.conference .icon-wi-fi {
+.service-list .b-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.service-list .b-icon:before {
+  display: none;
+}
+
+.b-service:not(.service-list) .service-item {
+  margin-right: 20px;
+}
+
+.b-service:not(.service-list) .b-icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.b-service:not(.service-list) .b-icon:before {
+  display: none;
+}
+
+.icon-wi-fi {
   background: url("../new-img/ico-wifi.svg") no-repeat center;
 }
 
-.conference .icon-restaurant {
+.icon-restaurant {
   background: url("../new-img/ico-coffee.svg") no-repeat center;
 }
 
-.conference .icon-parking {
+.icon-parking {
   background: url("../new-img/ico-parking.svg") no-repeat center;
 }
 
-.conference .icon-alarm {
+.icon-alarm {
   background: url("../new-img/ico-clock.svg") no-repeat center;
 }
 
-.conference .icon-no_smoking {
+.icon-no_smoking {
   background: url("../new-img/ico-smoking.svg") no-repeat center;
 }
 
-.conference .icon-computer {
+.icon-computer {
   background: url("../new-img/ico-monitor.svg") no-repeat center;
 }
 
-.conference .icon-clock {
+.icon-clock {
   background: url("../new-img/ico-clock-1.svg") no-repeat center;
 }
 
-.conference .icon-morkovka {
+.icon-wi-fi {
+  background: url("../new-img/ico-wifi.svg") no-repeat center;
+}
+
+.icon-restaurant {
+  background: url("../new-img/ico-coffee.svg") no-repeat center;
+}
+
+.icon-parking {
+  background: url("../new-img/ico-parking.svg") no-repeat center;
+}
+
+.icon-alarm {
+  background: url("../new-img/ico-clock.svg") no-repeat center;
+}
+
+.icon-no_smoking {
+  background: url("../new-img/ico-smoking.svg") no-repeat center;
+}
+
+.icon-computer {
+  background: url("../new-img/ico-monitor.svg") no-repeat center;
+}
+
+.icon-clock {
+  background: url("../new-img/ico-clock-1.svg") no-repeat center;
+}
+
+.icon-morkovka {
   background: url("../new-img/carrot.svg") no-repeat center;
 }
 
-.conference .icon-ball {
+.icon-ball {
   background: url("../new-img/ball1.svg") no-repeat center;
 }
 
-.conference .icon-soska {
+.icon-soska {
   background: url("../new-img/baby.svg") no-repeat center;
 }
 
-.conference .icon-cocktail {
+.icon-cocktail {
   background: url("../new-img/cocktail.svg") no-repeat center;
 }
 
-.conference .icon-beer {
+.icon-beer {
   background: url("../new-img/beer.svg") no-repeat center;
 }
 
-.conference .icon-kaljan {
+.icon-kaljan {
   background: url("../new-img/hookah.svg") no-repeat center;
 }
 
-.conference .icon-microphone {
+.icon-microphone {
   background: url("../new-img/microphone.svg") no-repeat center;
 }
 
-.conference .icon-sound {
+.icon-sound {
   background: url("../new-img/audio.svg") no-repeat center;
 }
 
-.conference .icon-drink, .conference .icon-water {
+.icon-drink, .icon-water {
   background: url("../new-img/water.svg") no-repeat center;
 }
 
-.conference .icon-planshet {
+.icon-planshet {
   background: url("../new-img/screen.svg") no-repeat center;
 }
 
-.conference .icon-projector_ekran {
+.icon-projector_ekran {
   background: url("../new-img/projector-screen.svg") no-repeat center;
 }
 
-.conference .icon-projector {
+.icon-projector {
   background: url("../new-img/projector.svg") no-repeat center;
 }
 
-.conference .icon-call {
+.icon-call {
   background: url("../new-img/phone.svg") no-repeat center;
+}
+
+.icon-umbrella {
+  background: url("../new-img/icon-umbrella.svg") no-repeat center;
+}
+
+.icon-umbrella {
+  background: url("../new-img/icon-umbrella.svg") no-repeat center;
+}
+
+.icon-flower {
+  background: url("../new-img/icon-flower.svg") no-repeat center;
+}
+
+.icon-businessman {
+  background: url("../new-img/icon-businessman.svg") no-repeat center;
+}
+
+.icon-taxi {
+  background: url("../new-img/icon-taxi.svg") no-repeat center;
+}
+
+.icon-currencyexchange {
+  background: url("../new-img/icon-currencyexchange.svg") no-repeat center;
+}
+
+.icon-creditcard {
+  background: url("../new-img/icon-creditcard.svg") no-repeat center;
+}
+
+.icon-modern {
+  background: url("../new-img/icon-modern.svg") no-repeat center;
+}
+
+.icon-wifi {
+  background: url("../new-img/icon-wifi.svg") no-repeat center;
+}
+
+.icon-massage {
+  background: url("../new-img/icon-massage.svg") no-repeat center;
+}
+
+.icon-airplane {
+  background: url("../new-img/icon-airplane.svg") no-repeat center;
+}
+
+.icon-inmap7 {
+  background: url("../new-img/icon-inmap7.svg") no-repeat center;
+}
+
+.icon-billiards {
+  background: url("../new-img/icon-billiards.svg") no-repeat center;
+}
+
+.icon-newspaper2 {
+  background: url("../new-img/icon-newspaper2.svg") no-repeat center;
+}
+
+.icon-shoes2 {
+  background: url("../new-img/icon-shoes2.svg") no-repeat center;
+}
+
+.icon-tablet {
+  background: url("../new-img/icon-tablet.svg") no-repeat center;
+}
+
+.icon-hanger {
+  background: url("../new-img/icon-hanger.svg") no-repeat center;
+}
+
+.icon-depositbox {
+  background: url("../new-img/icon-depositbox.svg") no-repeat center;
+}
+
+.icon-suitcase {
+  background: url("../new-img/icon-suitcase.svg") no-repeat center;
+}
+
+.icon-matrioshka {
+  background: url("../new-img/icon-matrioshka.svg") no-repeat center;
+}
+
+.icon-cloche {
+  background: url("../new-img/icon-cloche.svg") no-repeat center;
+}
+
+.icon-print {
+  background: url("../new-img/icon-print.svg") no-repeat center;
+}
+
+.preview-item.b-icon {
+  background: none;
+}
+
+.b-category .category-price {
+  margin-bottom: 0;
+}
+
+.category__area {
+  margin-top: 20px;
+}
+
+.b-detail .detail-price {
+  display: block;
+}
+
+.b-detail .detail-price .price-value {
+  font-size: 1.25rem;
+}
+
+.b-detail .detail-button {
+  display: block;
+  margin: 40px 0;
+  text-align: left;
+}
+
+.dop_color {
+  color: #B5B5B5;
 }
 
 .mobile-link {
@@ -859,6 +920,12 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
+  .conference_element .b-detail .detail-price {
+    flex-direction: column;
+  }
+  .conference_element .b-detail .price-item:not(:first-child) {
+    margin-left: 0;
+  }
   .b-slider.slider-detail {
     max-width: 100% !important;
     margin: 0 !important;
@@ -1672,6 +1739,41 @@ img {
 }
 
 @media screen and (max-width: 660px) {
+  .b-service.service-list .service-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .b-service.service-list .service-item .b-icon {
+    width: 100%;
+    max-width: 50px;
+  }
+  .b-service.service-list .service-item .service-text {
+    display: block;
+    margin-left: 20px;
+  }
+  .b-category .category-price {
+    white-space: normal;
+  }
+  .b-category .category-price .price-item {
+    margin-right: 0;
+  }
+  .conference_element .info-item {
+    padding-bottom: 20px;
+  }
+  .conference_element .b-detail .detail-price .price-item {
+    display: block;
+  }
+  .conference_element .b-detail .detail-price .price-value {
+    padding-left: 0;
+  }
+  .conference_element .b-detail .detail-button {
+    display: block;
+    margin: 20px 0;
+  }
+  .category-price .price-value {
+    padding-left: 0;
+  }
   .mobile-link {
     display: block;
   }

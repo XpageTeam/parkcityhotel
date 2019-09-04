@@ -50,6 +50,13 @@ $output-bourbon-deprecation-warnings: false
 
 @media screen and (max-width: 1000px)
 
+	.conference_element
+		.b-detail 
+			.detail-price
+				flex-direction: column
+
+			.price-item:not(:first-child)
+				margin-left: 0
 
 
 	.b-slider.slider-detail
@@ -1006,6 +1013,51 @@ $output-bourbon-deprecation-warnings: false
 		display: none			
 
 @media screen and (max-width: 660px)
+
+	.b-service.service-list 
+		.service-item
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+
+
+			.b-icon
+				width: 100%
+				max-width: 50px
+
+			.service-text
+				display: block
+				margin-left: 20px
+
+
+	.b-category 
+		.category-price 
+			white-space: normal
+
+		.category-price .price-item
+			margin-right: 0
+
+	.conference_element
+
+		.info-item
+			padding-bottom: 20px
+
+		.b-detail
+			.detail-price
+
+				.price-item
+					display: block
+
+				.price-value
+					padding-left: 0
+
+			.detail-button
+				display: block
+				margin: 20px 0
+
+	.category-price .price-value
+		padding-left: 0
+
 
 	.mobile-link
 		display: block
