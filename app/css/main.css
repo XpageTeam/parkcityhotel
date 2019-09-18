@@ -1789,11 +1789,24 @@ img {
     flex-direction: column !important;
     margin-bottom: 30px !important;
   }
+  .row-slider .slick-next, .row-slider .slick-prev {
+    z-index: 10;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .row-slider .slick-next:before, .row-slider .slick-prev:before {
+    color: #fff;
+  }
   .row-slider .slick-prev {
     left: 0;
+    border-radius: 10px 0 0 10px;
   }
   .row-slider .slick-next {
     right: 0;
+    border-radius: 0 10px 10px 0;
   }
   .row-slider__slider {
     width: 100%;

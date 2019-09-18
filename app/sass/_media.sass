@@ -1018,10 +1018,25 @@ $output-bourbon-deprecation-warnings: false
 		flex-direction: column !important
 		margin-bottom: 30px !important
 
+
+		.slick-next, .slick-prev 
+			z-index: 10
+			top: 0
+			width: 50px
+			height: 100%
+			margin: 0
+			background: rgba(0, 0, 0, 0.3)
+
+
+			&:before
+				color: #fff
+
 		.slick-prev
 			left: 0
+			border-radius: 10px 0 0 10px
 		.slick-next
 			right: 0
+			border-radius: 0 10px 10px 0
 
 		&__slider
 			width: 100%
