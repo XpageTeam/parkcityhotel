@@ -1014,6 +1014,19 @@ $output-bourbon-deprecation-warnings: false
 
 @media screen and (max-width: 660px)
 
+	.row-slider
+		flex-direction: column !important
+		margin-bottom: 30px !important
+
+		.slick-prev
+			left: 0
+		.slick-next
+			right: 0
+
+		&__slider
+			width: 100%
+			margin: 20px 0 0 0 !important
+
 	.b-service.service-list 
 		.service-item
 			display: flex

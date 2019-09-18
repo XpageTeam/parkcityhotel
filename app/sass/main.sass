@@ -7,6 +7,35 @@ $output-bourbon-deprecation-warnings: false
 @import "_conference-page.sass"
 @import "functions"
 
+
+.row-slider
+	display: flex
+	align-items: center
+	margin-bottom: 40px
+
+	&__slider
+		width: 50%
+		flex: none
+		margin-left: 30px
+
+		img
+			display: block
+			border-radius: 10px
+
+
+		.slick-next:before, .slick-prev:before
+			color: #000
+
+	&:nth-child(odd)
+		flex-direction: row-reverse
+
+		.row-slider__slider
+			margin: 0 40px 0 0
+
+
+
+
+
 .travel-list
 	.b-icon 
 		flex: none

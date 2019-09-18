@@ -45,6 +45,17 @@ $(document).ready(function() {
             }
         ]
 
+    });    
+
+
+    $('.row-slider__list').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        fade: true,
+        slide: '.row-slider__item',
+
     });
 
     if($('.category-image__list').length){
