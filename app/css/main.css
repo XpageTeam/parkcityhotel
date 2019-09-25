@@ -217,6 +217,12 @@
   margin: 0 40px 0 0;
 }
 
+.row-slider .b-button {
+  height: 53px;
+  line-height: 51px;
+  padding: 0 46px;
+}
+
 .travel-list .b-icon {
   flex: none;
 }
