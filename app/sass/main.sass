@@ -8,6 +8,38 @@ $output-bourbon-deprecation-warnings: false
 @import "functions"
 
 
+.b-container
+	&__top
+		&-title
+
+			h1
+				text-align: left
+
+	&__info
+		display: flex
+		padding: 0 10px
+
+		&-img
+			flex: none
+			margin-right: 20px
+
+			img
+				display: block
+				border-radius: 8px
+
+			.detail-preview
+				text-align: center
+				margin-top: 15px
+
+
+		.info-item
+			padding-top: 0 !important
+
+
+.info-item
+	img
+		border-radius: 8px
+
 .row-slider
 	display: flex
 	align-items: center
@@ -43,6 +75,11 @@ $output-bourbon-deprecation-warnings: false
 	.button-detail
 		display: flex
 		justify-content: center
+
+	&.not-slider
+		justify-content: center
+
+
 
 
 

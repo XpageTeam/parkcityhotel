@@ -50,6 +50,12 @@ $output-bourbon-deprecation-warnings: false
 
 @media screen and (max-width: 1000px)
 
+	.b-container
+		&__info
+			&-img
+				max-width: 335px
+
+
 	.conference_element
 		.b-detail 
 			.detail-price
@@ -1013,6 +1019,20 @@ $output-bourbon-deprecation-warnings: false
 		display: none			
 
 @media screen and (max-width: 660px)
+
+	.b-container__info
+		flex-direction: column
+
+	.b-container__top-title
+		margin-bottom: 20px
+
+	.b-container__info-img
+		max-width: 100%
+		margin-bottom: 20px
+		margin-right: 0
+
+		img
+			width: 100%
 
 	.row-slider
 		flex-direction: column !important
