@@ -15,6 +15,12 @@ $(document).ready(function () {
         $this.find('.section-list').closest('.root-item').addClass('js__has-sub-menu');
     });
 
+    $('.vacancy__item .b-switcher').click(function () {
+        var $this = $(this);
+
+        $this.closest('.vacancy__item').find('.vacancy-details').slideToggle();
+    });
+
     if ($(window).width() < 820) {
         $('.js__has-sub-menu').click(function () {
             var $this = $(this);

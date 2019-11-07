@@ -7,6 +7,38 @@ $output-bourbon-deprecation-warnings: false
 @import "_conference-page.sass"
 @import "functions"
 
+.vacancy__item
+	display: flex
+
+	&-img
+		width: 300px
+		flex: none
+		margin-right: 30px
+
+	&-info
+		width: 100%
+
+	.vacancy-element
+		display: flex
+
+	.element-title
+		max-width: 200px
+		width: 100%
+
+	.vacancy-details
+		&[style*="display: block"]
+
+			~ .js-show-detail-vacancy
+				display: none
+
+
+
+.b-vacancy 
+	.vacancy-element 
+		.element-title
+			font-weight: 700
+			flex: none	
+
 
 .b-container
 	&__top

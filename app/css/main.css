@@ -188,6 +188,38 @@
   display: none;
 }
 
+.vacancy__item {
+  display: flex;
+}
+
+.vacancy__item-img {
+  width: 300px;
+  flex: none;
+  margin-right: 30px;
+}
+
+.vacancy__item-info {
+  width: 100%;
+}
+
+.vacancy__item .vacancy-element {
+  display: flex;
+}
+
+.vacancy__item .element-title {
+  max-width: 200px;
+  width: 100%;
+}
+
+.vacancy__item .vacancy-details[style*="display: block"] ~ .js-show-detail-vacancy {
+  display: none;
+}
+
+.b-vacancy .vacancy-element .element-title {
+  font-weight: 700;
+  flex: none;
+}
+
 .b-container__top-title h1 {
   text-align: left;
 }
@@ -1013,6 +1045,9 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
+  .vacancy__item-img {
+    width: 170px;
+  }
   .b-container__info-img {
     max-width: 335px;
   }
@@ -1835,6 +1870,9 @@ img {
 }
 
 @media screen and (max-width: 660px) {
+  .vacancy__item {
+    flex-direction: column;
+  }
   .b-container__info {
     flex-direction: column;
   }
