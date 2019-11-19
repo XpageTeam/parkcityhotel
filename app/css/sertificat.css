@@ -1,0 +1,32 @@
+.sertificat__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 -30px -30px;
+}
+
+.sertificat__item {
+  width: calc((100% - 30px * 4) / 4);
+  margin: 0 0 30px 30px;
+}
+
+.sertificat__item img {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .sertificat__item {
+    width: calc((100% - 30px * 3) / 3);
+  }
+}
+
+@media (max-width: 667px) {
+  .sertificat__list {
+    margin: 0 0 -20px -20px;
+  }
+  .sertificat__item {
+    width: calc((100% - 20px * 2) / 2);
+    margin: 0 0 20px 20px;
+  }
+}
+
+/*# sourceMappingURL=sertificat.css.map */
