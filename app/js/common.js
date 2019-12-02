@@ -3,7 +3,7 @@
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 $(document).ready(function () {
-    var _ref;
+    var _ref, _ref2;
 
     $('.burger').click(function () {
         var $this = $(this);
@@ -69,6 +69,23 @@ $(document).ready(function () {
             slide: '.category-image__item'
         });
     }
+
+    $('.guests__list').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        slide: '.guests__item',
+        responsive: [(_ref2 = {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 3
+            }
+        }, _defineProperty(_ref2, 'breakpoint', 660), _defineProperty(_ref2, 'settings', {
+            slidesToShow: 1
+        }), _ref2)]
+
+    });
 
     // if($(window).width() < 1000){
     //     var menuSlider = $('.b-slider.slider-detail ~ .b-content .content-menu').clone().addClass('js__slider-menu');

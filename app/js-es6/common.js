@@ -73,6 +73,29 @@ $(document).ready(function() {
     }
 
 
+    $('.guests__list').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        slide: '.guests__item',
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                },
+                breakpoint: 660,
+                settings: {
+                    slidesToShow: 1,
+                },
+                
+            }
+        ]
+
+    });
+
+
     // if($(window).width() < 1000){
     //     var menuSlider = $('.b-slider.slider-detail ~ .b-content .content-menu').clone().addClass('js__slider-menu');
     //     $('.b-slider.slider-detail ~ .b-content .content-menu').closest('body').append(menuSlider);

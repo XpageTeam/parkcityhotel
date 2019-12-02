@@ -1,0 +1,114 @@
+.btn-cont
+	display: flex
+	justify-content: center
+	padding: 40px 0
+
+.title
+	font-size: rem(32)
+	margin-bottom: 30px
+
+.halls
+	margin: 50px 0
+
+	&__item
+		display: flex
+
+		&:not(:first-child)
+			margin-top: 30px
+
+		&-img
+			flex: none
+			margin-right: 30px
+
+		&-title
+			font-size: rem(22)
+			margin-bottom: 20px
+
+		&-bot
+			display: flex
+			justify-content: space-between
+			margin-top: 15px
+
+.stock
+	margin: 50px 0
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin: 0 0 -30px -30px
+
+	&__item
+		width: calc((100% - 30px * 2) / 2)
+		margin: 0 0 30px 30px
+
+		&-title
+			font-size: rem(20)
+			margin-bottom: 10px
+
+		&-btn
+			margin-top: 20px
+
+.guests
+	&__list
+		margin: 0 -10px
+
+	&__item
+		margin: 0 10px
+
+		img
+			border-radius: 5px
+
+.map-cont
+	position: relative
+
+	.map
+		height: 500px
+
+.map-info
+	position: absolute
+	left: 35px
+	top: 50%
+	transform: translate3d(0,-50%,0)
+	background-color: #fff
+	padding: 35px
+	color: #000
+	max-width: 300px
+
+	> *
+		&:not(:first-child)
+			margin-top: 15px
+
+@media (max-width: 1000px)
+	
+	.halls__item-img
+		margin-right: 15px
+		max-width: 285px
+
+
+@media (max-width: 667px)
+	
+	.halls__item
+		flex-direction: column
+
+
+		&-img
+			max-width: 100%
+			margin: 0 0 20px 0
+
+		&-bot
+			flex-direction: column
+
+			.preview-item + .b-button
+				margin-top: 20px
+
+	.stock__item
+		width: 100%
+
+	.map-info
+		position: relative
+		left: 0
+		top: 0
+		transform: none
+		background-color: #fff
+		padding: 25px
+		max-width: 100%
