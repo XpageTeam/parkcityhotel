@@ -5,6 +5,20 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 $(document).ready(function () {
     var _ref, _ref2;
 
+    $(".fancybox-thumb").fancybox({
+        prevEffect: 'none',
+        nextEffect: 'none',
+        helpers: {
+            title: {
+                type: 'outside'
+            },
+            thumbs: {
+                width: 150,
+                height: 150
+            }
+        }
+    });
+
     $('.burger').click(function () {
         var $this = $(this);
         $('body').toggleClass('main-nav--open');
@@ -76,6 +90,7 @@ $(document).ready(function () {
         dots: false,
         arrows: true,
         slide: '.guests__item',
+        infinite: false,
         responsive: [(_ref2 = {
             breakpoint: 1000,
             settings: {

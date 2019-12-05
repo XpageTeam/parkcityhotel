@@ -74,7 +74,21 @@
 }
 
 .guests__item {
+  position: relative;
   margin: 0 10px;
+}
+
+.guests__item-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+  color: #fff;
+  background: linear-gradient(180deg, transparent 66.15%, rgba(0, 0, 0, 0.18) 100%);
 }
 
 .guests__item img {

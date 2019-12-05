@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+     $(".fancybox-thumb").fancybox({
+            prevEffect    : 'none',
+            nextEffect    : 'none',
+            helpers    : {
+                title    : {
+                    type: 'outside'
+                },
+                thumbs    : {
+                    width    : 150,
+                    height    : 150
+                }
+            }
+        });
+
+
     $('.burger').click(function(){
         var $this = $(this);
         $('body').toggleClass('main-nav--open');
@@ -79,6 +94,7 @@ $(document).ready(function() {
         dots: false,
         arrows: true,
         slide: '.guests__item',
+        infinite: false,
         responsive: [
             {
                 breakpoint: 1000,
@@ -124,6 +140,11 @@ $(document).ready(function() {
                 }
             }
         });
+
+        
+
+
+
     } ());
 
 
