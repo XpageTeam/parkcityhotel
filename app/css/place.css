@@ -26,6 +26,10 @@
   margin-right: 30px;
 }
 
+.halls__item-img img {
+  border-radius: 5px;
+}
+
 .halls__item-title {
   font-size: rem(22);
   margin-bottom: 20px;
@@ -50,6 +54,10 @@
 .stock__item {
   width: calc((100% - 30px * 2) / 2);
   margin: 0 0 30px 30px;
+}
+
+.stock__item img {
+  border-radius: 5px;
 }
 
 .stock__item-title {
@@ -87,13 +95,13 @@
   top: 50%;
   transform: translate3d(0, -50%, 0);
   background-color: #fff;
-  padding: 35px;
+  padding: 64px 35px;
   color: #000;
-  max-width: 300px;
+  max-width: 330px;
 }
 
 .map-info > *:not(:first-child) {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 @media (max-width: 1000px) {
