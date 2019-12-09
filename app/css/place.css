@@ -1,3 +1,7 @@
+.place-banner img {
+  width: 100%;
+}
+
 .btn-cont {
   display: flex;
   justify-content: center;
