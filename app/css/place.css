@@ -164,7 +164,13 @@ html {
 
 @media (max-width: 667px) {
   .js__page-places {
-    overflow: hidden;
+    overflow-x: hidden;
+  }
+  .js__page-places .slick-prev {
+    left: 0;
+  }
+  .js__page-places .slick-next {
+    right: 0;
   }
   .b-page .b-content.page-restoran:not(.b-booking-content) {
     padding-top: 80px !important;
