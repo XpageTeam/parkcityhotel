@@ -1,6 +1,42 @@
+html
+	height: initial !important
+
+.js__page-places
+	background-color: #13022C
+
+	#block-search-inner
+		display: none !important
+
+	.b-content
+		margin-bottom: 0
+
+
+.b-content.page-restoran
+	position: relative
+	padding-top: 0
+	// top: -23px
+	z-index: 10
+
+	// &:before
+	// 	content: ''
+	// 	display: block
+	// 	position: absolute
+	// 	top: 0
+	// 	left: 0
+	// 	right: 0
+	// 	bottom: 0
+	// 	z-index: 0
+	// 	pointer-events: none
+	// 	background-color: #13022C
+
+
 .place-banner
 	img
 		width: 100%
+
+	video
+		width: 100%
+
 .btn-cont
 	display: flex
 	justify-content: center
@@ -107,8 +143,24 @@
 		margin-right: 15px
 		max-width: 285px
 
+	.b-page .b-content.page-restoran:not(.b-booking-content)
+		padding-top: 87px !important 
+
+	.place-banner
+		video
+			margin: 0 -1.4rem
+			width: 100vw
 
 @media (max-width: 667px)
+
+	.js__page-places
+		overflow: hidden
+
+	// .b-content.page-restoran
+	// 	top: -67px
+
+	.b-page .b-content.page-restoran:not(.b-booking-content)
+		padding-top: 80px !important
 	
 	.halls__item
 		flex-direction: column

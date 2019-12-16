@@ -19,6 +19,8 @@ $(document).ready(function () {
         }
     });
 
+    $('.page-restoran').closest('body').addClass('js__page-places');
+
     $('.burger').click(function () {
         var $this = $(this);
         $('body').toggleClass('main-nav--open');

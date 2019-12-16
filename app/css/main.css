@@ -219,7 +219,33 @@
   }
 }
 
+html {
+  height: initial !important;
+}
+
+.js__page-places {
+  background-color: #13022C;
+}
+
+.js__page-places #block-search-inner {
+  display: none !important;
+}
+
+.js__page-places .b-content {
+  margin-bottom: 0;
+}
+
+.b-content.page-restoran {
+  position: relative;
+  padding-top: 0;
+  z-index: 10;
+}
+
 .place-banner img {
+  width: 100%;
+}
+
+.place-banner video {
   width: 100%;
 }
 
@@ -348,9 +374,22 @@
     margin-right: 15px;
     max-width: 285px;
   }
+  .b-page .b-content.page-restoran:not(.b-booking-content) {
+    padding-top: 87px !important;
+  }
+  .place-banner video {
+    margin: 0 -1.4rem;
+    width: 100vw;
+  }
 }
 
 @media (max-width: 667px) {
+  .js__page-places {
+    overflow: hidden;
+  }
+  .b-page .b-content.page-restoran:not(.b-booking-content) {
+    padding-top: 80px !important;
+  }
   .halls__item {
     flex-direction: column;
   }
