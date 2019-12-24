@@ -19,7 +19,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.page-restoran').closest('body').addClass('js__page-places');
+    $('.place-banner-cont').closest('body').addClass('js__page-places');
 
     $('.burger').click(function () {
         var $this = $(this);
