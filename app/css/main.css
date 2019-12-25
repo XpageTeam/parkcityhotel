@@ -233,6 +233,7 @@ html {
 
 .js__page-places .b-content {
   margin-bottom: 0;
+  padding-top: 60px !important;
 }
 
 .b-content.page-restoran {
