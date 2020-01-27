@@ -1,4 +1,98 @@
-header.head
+.b-header
+	.b-container
+		a.logo(href='/', title='Гостиница «Park-City» Челябинск')
+			img.logo-image(src='/upload/images/logo.png', alt='Гостиница «Park-City» Челябинск')
+			img.logo-mobile(src='/bitrix/templates/common2018/new-img/logo-mobile.png', alt='')
+		.header-address
+			.header-item
+				a.link-with-icon(href='/contacts/')
+					i.b-icon.icon-pointer
+					span.header-text-item
+						| Россия, г. Челябинск,
+						br
+						| ул. Лесопарковая, д. 6
+		a.header-phone.link-with-icon(title='', href='tel:83517312222')
+			.header-item
+				i.b-icon.icon-phone
+				span.header-text-item.link-text.callibri_phone +7 (351) 731-22-22
+		.lang-switcher
+			.current-lang.ru RU
+				ul.list
+					li.item
+						a.link.en(href='/en/fitness/', title='EN') EN
+		.header-visa
+			.header-item
+				a.header-visa-link.link-with-icon(title='', href='/visasupport/')
+					i.b-icon.icon-visa
+					span.header-text-item.link-text
+						| Визовая
+						br
+						| поддержка
+		.burger
+			span
+.b-menu.menu-main
+	.b-container
+		ul.menu-list
+			li.root-item
+				
+				a.root-link(href='/hotel/') Отель
+			li.root-item
+				
+				a.root-link(href='/rooms/') Номера
+			li.root-item.js__has-sub-menu
+				
+				span.root-link Акции
+				ul.section-list
+					li.section-item
+						
+						a.section-link(href='/offers/rooms/') Отеля
+					li.section-item
+						
+						a.section-link(href='/offers/business/') Конференц-услуг
+					li.section-item
+						
+						a.section-link(href='/offers/restaurant/') Баров и Ресторанов
+			li.root-item
+				
+				a.root-link(href='/restaurants/') Рестораны
+			li.root-item
+				
+				a.root-link(href='/conference/') Конференц-услуги
+			li.root-item
+				
+				a.root-link(href='/offers/rooms/sauna-v-chelyabinske/') Сауна
+			li.root-item
+				
+				a.root-link(href='/restaurants/elvis-bar/') Караоке
+			li.root-item.state-selected
+				
+				a.root-link(href='/fitness/') Фитнес
+			li.root-item
+				
+				a.root-link(href='/contacts/') Контакты
+			li.root-item.js__has-sub-menu
+				
+				span.root-link
+					i.b-icon.icon-menu
+					|  Еще
+				ul.section-list
+					li.section-item
+						
+						a.section-link(href='/events/') Календарь мероприятий
+					li.section-item
+						
+						a.section-link(href='/travel/') ParkCity Travel
+					li.section-item
+						
+						a.section-link(href='/vacancy/') Вакансии
+					li.section-item
+						
+						a.section-link(href='/our-blessings/') Наши благодарности
+
+
+				
+		
+		
 	
 
 		
