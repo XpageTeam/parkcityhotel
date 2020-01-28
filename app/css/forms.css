@@ -30,8 +30,10 @@
 }
 
 .forms-text-cont {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   margin-bottom: 30px;
 }
 
@@ -55,9 +57,12 @@
 }
 
 .forms-wrap {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .forms-wrap .left, .forms-wrap .right {
@@ -65,13 +70,16 @@
 }
 
 .forms-input-cont {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
   box-sizing: border-box;
   width: 100%;
   min-width: 10px;
   position: relative;
-  justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .forms-input-cont:not(:first-child) {
@@ -79,8 +87,10 @@
 }
 
 .forms-input-cont--req {
-  justify-content: space-between;
-  align-items: flex-start;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 
 .forms-input-cont--file, .forms-input-cont--textarea {
@@ -156,9 +166,12 @@
 }
 
 .forms__file-formats {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  order: -1;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-order: -1;
+      order: -1;
   margin-top: 1.54321vh;
   font-size: 0.875rem;
   color: #777777;
@@ -171,7 +184,8 @@
 }
 
 .forms__label--file {
-  order: 1;
+  -ms-flex-order: 1;
+      order: 1;
   pointer-events: none;
 }
 
@@ -190,7 +204,8 @@
 
 .forms-checkbox {
   position: relative;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .forms-checkbox:before {
@@ -220,13 +235,16 @@
   padding-left: 45px;
   cursor: pointer;
   height: 32px;
+  display: -ms-flexbox;
   display: flex;
   z-index: 2;
   position: relative;
 }
 
 .forms__checkbox-label span {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .forms__checkbox-label:before, .forms__checkbox-label:after {
@@ -242,8 +260,10 @@
   width: 10px;
   top: 11px;
   left: 5px;
-  transform-origin: left;
-  transform: rotate(45deg);
+  -ms-transform-origin: left;
+      transform-origin: left;
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 .forms__checkbox-label:after {
@@ -251,8 +271,10 @@
   width: 10px;
   top: 11px;
   left: 8px;
-  transform-origin: right;
-  transform: rotate(-45deg);
+  -ms-transform-origin: right;
+      transform-origin: right;
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
 }
 
 .forms__req-text {
@@ -266,9 +288,12 @@
 }
 
 .forms-submit-cont {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 
 .forms__submit {
@@ -349,5 +374,3 @@
   text-decoration: none;
   color: #000;
 }
-
-/*# sourceMappingURL=forms.css.map */

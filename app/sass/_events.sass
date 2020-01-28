@@ -39,13 +39,84 @@
 
 
 
-.btn
+.btn, .default-btn
 	background-color: #d4182d
 	color: #fff
 	padding: 10px 20px
 	border-radius: 5px
 	text-decoration: none
 	transition: background .3s ease
+	border: 0
 
 	&:hover
 		background-color: #ed1c24
+
+.form__submit
+	display: flex
+	flex-direction: row-reverse
+	margin-top: 30px
+
+.slick-slide
+	height: auto
+.events-one
+
+	&__title
+		font-size: rem(25)
+		margin-bottom: 20px
+
+	&__slider
+		margin-bottom: 50px
+
+		.slick-arrow
+			filter: invert(1)
+
+	&__form
+		display: flex
+
+		&-cont
+			margin-bottom: 50px
+
+		&-title
+			font-size: rem(25)
+			margin-bottom: 20px
+
+		&-text
+			line-height: 1.4
+
+		&-form
+			width: 400px
+			flex: none
+			margin-left: 50px
+
+	&__info
+		margin: 50px 0
+
+		.text-page
+			max-width: 800px
+
+		&-price 
+			font-size: rem(20)
+			font-weight: bold
+
+	&__consultation
+		margin: 100px 0
+
+		&-title
+			font-size: rem(25)
+			margin-bottom: 20px
+
+		.form__submit
+			justify-content: flex-end
+
+	&__information
+		font-size: rem(25)
+		text-align: center
+		line-height: 1.8
+
+		.text-page
+			max-width: 600px
+			margin: 0 auto
+
+		a
+			&[href^="tel"]
+				text-decoration: none

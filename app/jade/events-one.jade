@@ -19,42 +19,42 @@ html
 								.eo__slide
 									img(src="img/slider.jpg", alt="")
 
-						.events-one__form
+						.events-one__form-cont
 							form(action="")
-								.events-one__form-info
-									.events-one__form-title Организация свадьбы в Челябинске
-									.events-one__form-text Не секрет, что каждая влюбленная пара хочет, чтобы свадьба прошла по-особенному, как в самой доброй и восхитительной сказке и чтоб этот день возглавил список лучших и незабываемых событий их семейной истории.  Команда Парк-сити с радостью возьмет на себя все заботы по организации Вашего торжества. Мы готовы поддержать любую идею, и пусть Парк-сити станет местом, где зарождаются Ваши семейные традиции!
-								.events-one__form-form
-									.form__inputs
-										.form__inputs-input
-											.default-input
-												input.default-input__input.error(type="text" placeholder="" value="")
-												label.default-input__label Введите Ваше имя
-												.default-input__error
-													.error-text Ошибка
+								.events-one__form
+									.events-one__form-info
+										.events-one__form-title Организация свадьбы в Челябинске
+										.events-one__form-text Не секрет, что каждая влюбленная пара хочет, чтобы свадьба прошла по-особенному, как в самой доброй и восхитительной сказке и чтоб этот день возглавил список лучших и незабываемых событий их семейной истории.  Команда Парк-сити с радостью возьмет на себя все заботы по организации Вашего торжества. Мы готовы поддержать любую идею, и пусть Парк-сити станет местом, где зарождаются Ваши семейные традиции!
+									.events-one__form-form
+										.form__inputs
+											.form__inputs-input
+												.default-input
+													input.default-input__input.error(type="text" placeholder="" value="")
+													label.default-input__label Введите Ваше имя
+													.default-input__error
+														.error-text Ошибка
 
-										.form__inputs-input
-											.default-input
-												input.default-input__input(type="tel" placeholder="")
-												label.default-input__label Телефон
-												.default-input__error
-													.error-text
-														<!-- текст ошибки -->
-									.form__submit
-										.form__submit-text Нажимая кнопку, Вы даете информированное согласие на
-											a(href="#") на обработку моих персональных данных
-										.form__submit-btn
-											input.default-btn(type="submit" value="Отправить")
+											.form__inputs-input
+												.default-input
+													input.default-input__input(type="tel" placeholder="")
+													label.default-input__label Телефон
+													.default-input__error
+														.error-text
+															<!-- текст ошибки -->
+										.form__submit
+											.form__submit-text Нажимая кнопку, Вы даете информированное согласие на 
+												a(href="#") обработку моих персональных данных
+											.form__submit-btn
+												input.default-btn(type="submit" value="Отправить")
 
 						.events-one__info
 							.text-page
 								p Не секрет, что каждая влюбленная пара хочет, чтобы свадьба прошла по-особенному, как в самой доброй и восхитительной сказке и чтоб этот день возглавил список лучших и незабываемых событий их семейной истории.  Команда Парк-сити с радостью возьмет на себя все заботы по организации Вашего торжества. Мы готовы поддержать любую идею, и пусть Парк-сити станет местом, где зарождаются Ваши семейные традиции!
-
-						.events-one__price 30 000 руб
+							.events-one__info-price 30 000 руб
 						.events-one__consultation
 							.events-one__consultation-title Получить консультацию
 							form(action="")
-								.form__inputs
+								.form__inputs.form__inputs--2
 									.form__inputs-input
 										.default-input
 											input.default-input__input.error(type="text" placeholder="" value="")
@@ -75,28 +75,26 @@ html
 									.form__submit-btn
 										input.default-btn(type="submit" value="Отправить")
 
-						.events-one__information Для проведения мероприятия свяжитесь с нашей банкетной службой по телефону: 
+						.events-one__information 
+							.text-page Для проведения мероприятия свяжитесь с нашей банкетной службой по телефону: 
 							a(href="tel:+79048088800") +7 (904) 808 88 00
 
-		.b-container
-			.b-slider.slider-detail.slick-initialized.slick-slider
-				.slick-list.draggable(tabindex='0')
-					.slick-track(style='opacity: 1; width: 5760px; transform: translate3d(-960px, 0px, 0px);')
-						a.js-fancybox.slider-item.slick-slide.slick-cloned(href='/upload/iblock/db3/OGknyrMudco.jpg', rel='27', index='-2', style='width: 440px;')
-							.image-src.slider-image
-								img(src='img/events-1.jpg', alt='')
-						a.js-fancybox.slider-item.slick-slide.slick-cloned(href='/upload/resize_cache/iblock/cd5/1920_1280_2/5.jpg', rel='27', index='-1', style='width: 440px;')
-							.image-src.slider-image
-								img(src='img/events-1.jpg', alt='')
-						a.js-fancybox.slider-item.slick-slide.slick-active(href='/upload/iblock/13f/IMG_7670.jpg', rel='27', index='0', style='width: 440px;')
-							.image-src.slider-image
-								img(src='img/events-1.jpg', alt='')
-						a.js-fancybox.slider-item.slick-slide.slick-active(href='/upload/iblock/0c1/58zEtD7ge50.jpg', rel='27', index='1', style='width: 440px;')
-							.image-src.slider-image
-								img(src='img/events-1.jpg', alt='')
+			.b-container
+				.b-slider.slider-detail
+					a.js-fancybox.slider-item(href='img/slider.jpg', rel='27')
+						.image-src.slider-image
+							img(src='img/events-1.jpg', alt='')
+					a.js-fancybox.slider-item(href='img/slider.jpg', rel='27')
+						.image-src.slider-image
+							img(src='img/events-1.jpg', alt='')
+					a.js-fancybox.slider-item(href='img/slider.jpg', rel='27')
+						.image-src.slider-image
+							img(src='img/events-1.jpg', alt='')
+					a.js-fancybox.slider-item(href='img/slider.jpg', rel='27')
+						.image-src.slider-image
+							img(src='img/events-1.jpg', alt='')
 						
-				button.slick-prev(type='button', data-role='none', style='display: block;') Previous
-				button.slick-next(type='button', data-role='none', style='display: block;') Next
+			
 			
 
 
