@@ -30,10 +30,8 @@ html {
 }
 
 .btn-cont {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   padding: 40px 0;
 }
 
@@ -47,7 +45,6 @@ html {
 }
 
 .halls__item {
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -56,8 +53,7 @@ html {
 }
 
 .halls__item-img {
-  -ms-flex: none;
-      flex: none;
+  flex: none;
   margin-right: 30px;
 }
 
@@ -71,10 +67,8 @@ html {
 }
 
 .halls__item-bot {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   margin-top: 15px;
 }
 
@@ -83,10 +77,8 @@ html {
 }
 
 .stock__list {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0 0 -30px -30px;
 }
 
@@ -123,10 +115,8 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: end;
-      align-items: flex-end;
+  align-items: flex-end;
   padding: 25px;
   color: #fff;
   background: linear-gradient(180deg, transparent 66.15%, rgba(0, 0, 0, 0.18) 100%);
@@ -187,16 +177,14 @@ html {
     padding-top: 80px !important;
   }
   .halls__item {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
   .halls__item-img {
     max-width: 100%;
     margin: 0 0 20px 0;
   }
   .halls__item-bot {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
   .halls__item-bot .preview-item + .b-button {
     margin-top: 20px;
@@ -208,10 +196,11 @@ html {
     position: relative;
     left: 0;
     top: 0;
-    -ms-transform: none;
-        transform: none;
+    transform: none;
     background-color: #fff;
     padding: 25px;
     max-width: 100%;
   }
 }
+
+/*# sourceMappingURL=place.css.map */
