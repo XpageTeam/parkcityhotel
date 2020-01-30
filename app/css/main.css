@@ -454,6 +454,7 @@ html {
 .events__item-title {
   font-size: 1.25rem;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .events__item-bot {
@@ -475,6 +476,12 @@ html {
 .events__top-title {
   font-size: 1.875rem;
   margin-bottom: 20px;
+  display: none;
+}
+
+.events__top-banner img {
+  display: block;
+  width: 100%;
 }
 
 .btn, .default-btn {
@@ -551,22 +558,30 @@ html {
 }
 
 .events-one__consultation {
-  margin: 100px 0;
+  margin: 100px auto;
+  max-width: 750px;
 }
 
 .events-one__consultation-title {
   font-size: 1.5625rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .events-one__consultation .form__submit {
-  justify-content: flex-end;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.events-one__consultation .form__submit-text {
+  text-align: center;
+  margin-top: 15px;
 }
 
 .events-one__information {
   font-size: 1.5625rem;
   text-align: center;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .events-one__information .text-page {
