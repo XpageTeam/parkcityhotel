@@ -431,6 +431,10 @@ html {
   }
 }
 
+.menu-list.wedding {
+  display: flex !important;
+}
+
 .events__item {
   display: flex;
 }
@@ -543,6 +547,10 @@ html {
   margin-bottom: 50px;
 }
 
+.events-one__form-cont .events-one__consultation-title {
+  display: none;
+}
+
 .events-one__form-title {
   font-size: 1.5625rem;
   margin-bottom: 20px;
@@ -557,7 +565,7 @@ html {
   flex: none;
   margin-left: 50px;
   background-color: #f8f8f8;
-  padding: 40px 50px 50px;
+  padding: 10px;
 }
 
 .events-one__info {
@@ -1098,6 +1106,18 @@ textarea.default-input__input:not(.default-input__input--textarea) {
   --input-vert-spacing: 25px;
   --input-padding: 17px 20px;
   --select-padding: 17px 30px 17px 20px;
+}
+
+.b-menu.menu-main .menu-list {
+  display: flex;
+}
+
+.b-menu.menu-main .section-list {
+  top: 100%;
+}
+
+.b-menu.menu-main .root-link {
+  padding: 7px 10px 8px;
 }
 
 .header-address a {
