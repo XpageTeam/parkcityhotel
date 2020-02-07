@@ -50,6 +50,13 @@ $output-bourbon-deprecation-warnings: false
 
 @media screen and (max-width: 1000px)
 
+	.menu-list.wedding
+		display: none !important
+
+	.menu-list:not(.wedding)
+		a[href="/wedding-organization/"]
+			display: block
+
 	.vacancy__item-img
 		width: 170px
 
