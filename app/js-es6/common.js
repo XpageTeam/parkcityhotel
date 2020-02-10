@@ -57,6 +57,8 @@ $(document).ready(function() {
 
     });
 
+    $('.menu-list .root-item:contains("Контакты")').html('<a href="/contacts/" class="root-link">Контакты</a>')
+
     $('.vacancy__item .b-switcher').click(function(){
         var $this = $(this);
 
