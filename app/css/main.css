@@ -1121,6 +1121,29 @@ textarea.default-input__input:not(.default-input__input--textarea) {
   --select-padding: 17px 30px 17px 20px;
 }
 
+.root-link[href="/more/"] {
+  display: flex !important;
+  align-items: center;
+}
+
+.root-link[href="/more/"]:before {
+  content: "\e615";
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 14px;
+  vertical-align: top;
+  font-family: 'TL Icon';
+  font-weight: 400 !important;
+  text-transform: none !important;
+  font-style: normal !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.b-icon.icon-menu {
+  display: none !important;
+}
+
 .menu-list:not(.wedding) a[href="/wedding-organization/"] {
   display: none;
 }
